@@ -2447,6 +2447,16 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(32, 35, 61);
 				globalOffset = [-200, 80];
 
+			case 'staten':
+				frames = Paths.getSparrowAtlas('characters/towerSheet', 'shared');
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				for (anim in ['Left', 'Down', 'Up', 'Right'])
+				{
+					animation.addByPrefix('sing${anim.toUpperCase()}', '$anim', 24, false);
+				}
+				loadOffsetFile(curCharacter);
+				barColor = FlxColor.fromRGB(32, 35, 61);
+
 			case 'gorbini':
 				frames = Paths.getSparrowAtlas('characters/gorbini_assets', 'shared');
 				animation.addByPrefix('idle', 'gorbidle', 24, false);
@@ -2472,10 +2482,10 @@ class Character extends FlxSprite
 			case 'pewdiepie':
 				frames = Paths.getSparrowAtlas('characters/pewdiepie', 'shared');
 				animation.addByPrefix('idle', 'pewdiepie idle', 24, false);
-				for (anim in ['right', 'up', 'up', 'right'])
-				{
-					animation.addByPrefix('sing${anim.toUpperCase()}', 'pewdiepie sing $anim', 24, false);
-				}
+				animation.addByPrefix('singLEFT', 'pewdiepie sing right', 24, false);
+				animation.addByPrefix('singUP', 'pewdiepie sing up', 24, false);
+				animation.addByPrefix('singDOWN', 'pewdiepie sing up', 24, false);
+				animation.addByPrefix('singRIGHT', 'pewdiepie sing right', 24, false);
 				loadOffsetFile(curCharacter);
 				barColor = FlxColor.fromRGB(32, 35, 61);
 
