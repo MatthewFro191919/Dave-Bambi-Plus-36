@@ -8483,41 +8483,41 @@ class PlayState extends MusicBeatState
 								throwThatBitchInThere('dave-splitathon', 'bob');
 							}
 						case 31120:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub1'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub1'), 0.02, 0.6);
 						case 31127:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub2'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub2'), 0.02, 0.6);
 						case 31141:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub3'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub3'), 0.02, 0.6);
 						case 31148:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub4'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub4'), 0.02, 0.6);
 					        case 31141:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub5'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub5'), 0.02, 0.6);
 					        case 31185:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub6'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub6'), 0.02, 0.6);
 					        case 31201:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub7'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub7'), 0.02, 0.6);
 					        case 31208:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub8'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub8'), 0.02, 0.6);
 					        case 31232:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub9'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub9'), 0.02, 0.6);
 						case 31241:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub10'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub10'), 0.02, 0.6);
 						case 31250:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub11'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub11'), 0.02, 0.6);
 						case 31141:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub12'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub12'), 0.02, 0.6);
 						case 31148:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub13'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub13'), 0.02, 0.6);
 					        case 31281:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub14'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub14'), 0.02, 0.6);
 					        case 31185:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub15'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub15'), 0.02, 0.6);
 					        case 31327:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub16'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub16'), 0.02, 0.6);
 					        case 31360:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub17'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub17'), 0.02, 0.6);
 					        case 31385:
-							subtitleManager.addSubtitle(LanguageManager.getTextString('splitathon_sub18'), 0.02, 0.6);
+							subtitleManager.addSubtitle(LanguageManager.getTextString('split2_sub18'), 0.02, 0.6);
 						}
 				case 'insanity' | 'insanity-2.5':
 					switch (curStep)
