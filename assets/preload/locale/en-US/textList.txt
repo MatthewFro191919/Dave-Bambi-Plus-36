@@ -184,24 +184,24 @@ electric-cockaldoodledoo_credit==This Song is NOT CANON!!!
 
 //SUBTITLES
 //Splitathon 2 Subtitles//
-splitathon_sub1==Thank you, Boyfriend.
-splitathon_sub2==You are the best opponent I had.
-splitathon_sub3==But you are more than that.
-splitathon_sub4==You are a friend.
-splitathon_sub5==My friend...
-splitathon_sub6==I'm sorry Bambi couldn't have joined us, but..
-splitathon_sub7==heh, you know him!
-splitathon_sub8==But I suppose this is a goodbye.
-splitathon_sub9==You have your girlfriend to go to.
-splitathon_sub10==And well, for me?
-splitathon_sub11==I have a son to take care of.
-splitathon_sub12==Me and you both wish we didn't have to go..
-splitathon_sub13==right?
-splitathon_sub14==Heh.
-splitathon_sub15==I'm sure you have tons of others who want to rap battle you.
-splitathon_sub16==You should probably get going.
-splitathon_sub17==Goodbye, Boyfriend.
-splitathon_sub18==Thanks for everything!
+split2_sub1==Thank you, Boyfriend.
+split2_sub2==You are the best opponent I had.
+split2_sub3==But you are more than that.
+split2_sub4==You are a friend.
+split2_sub5==My friend...
+split2_sub6==I'm sorry Bambi couldn't have joined us, but..
+split2_sub7==heh, you know him!
+split2_sub8==But I suppose this is a goodbye.
+split2_sub9==You have your girlfriend to go to.
+split2_sub10==And well, for me?
+split2_sub11==I have a son to take care of.
+split2_sub12==Me and you both wish we didn't have to go..
+split2_sub13==right?
+split2_sub14==Heh.
+split2_sub15==I'm sure you have tons of others who want to rap battle you.
+split2_sub16==You should probably get going.
+split2_sub17==Goodbye, Boyfriend.
+split2_sub18==Thanks for everything!
 
 // Blocked Subtitles //
 blocked_sub1==I block you...
