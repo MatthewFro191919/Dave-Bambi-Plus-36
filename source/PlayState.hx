@@ -8298,10 +8298,6 @@ class PlayState extends MusicBeatState
 							{
 								throwThatBitchInThere('bob', 'staten');
 							}
-						case 11518:
-							FlxG.camera.flash(FlxColor.WHITE, 1);
-							splitathonExpression('dave', 'happy');
-							addSplitathonChar("bob");
 						case 12160:
 							FlxG.camera.flash(FlxColor.WHITE, 1);
 							splitathonExpression('dave', 'happy');
