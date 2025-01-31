@@ -3299,10 +3299,10 @@ class PlayState extends MusicBeatState
 
 		if (!paused)
 		{
-		if (isPico)
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song, picoInst ? "Pico" : ""));
+		     if (isPico)
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoVoice ? "Pico" : ""));
 			vocals.play();
-		else
+		     else
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 			vocals.play();
 		}
