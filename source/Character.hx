@@ -2488,6 +2488,26 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'pewdiepie sing right', 24, false);
 				loadOffsetFile(curCharacter);
 				barColor = FlxColor.fromRGB(32, 35, 61);
+			case 'pico':
+				frames = Paths.getSparrowAtlas('characters/Pico_FNF_assetss', 'shared');
+				animation.addByPrefix('idle', 'Pico Idle Dance', 30, false);
+				animation.addByPrefix('singUP', 'pico Up note0', 30, false);
+				animation.addByPrefix('singRIGHT', 'Pico Note Right0', 30, false);
+				animation.addByPrefix('singLEFT', 'Pico NOTE LEFT0', 30, false);
+				animation.addByPrefix('singDOWN', 'ico Down Note0', 30, false);
+				animation.addByPrefix('singUPmiss', 'pico Up note MISS', 30, false);
+				animation.addByPrefix('singRIGHTmiss', 'Pico Note Right MISS', 30, false);
+				animation.addByPrefix('singLEFTmiss', 'Pico NOTE LEFT MISS', 30, false);
+				animation.addByPrefix('singDOWNmiss', 'ico Down Note MISS', 30, false);
+
+				barColor = FlxColor.fromRGB(183, 216, 85);
+
+				loadOffsetFile(curCharacter);
+				globalOffset = [0, -3];
+
+				playAnim('idle');
+
+				nativelyPlayable = true;
 
 		}
 		dance();
