@@ -1122,7 +1122,8 @@ class PlayState extends MusicBeatState
 		}
 		bfGroup.add(boyfriend);
 		isShaggy = boyfriend.curCharacter == 'shaggy' || boyfriend.curCharacter == 'supershaggy' || boyfriend.curCharacter == 'godshaggy' || boyfriend.curCharacter == 'redshaggy';
-
+                isPico = boyfriend.curCharacter == 'pico';
+				
 		switch (stageCheck)
 		{
 			case 'desktop':
