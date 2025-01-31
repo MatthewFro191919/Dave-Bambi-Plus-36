@@ -486,7 +486,8 @@ class PlayState extends MusicBeatState
 	//pico mix shit
 	public static var picoInst:Bool = false;
 	public static var picoVoice:Bool = false;
-	var isPico:Bool = false;
+ 	var isPico:Bool = false;
+                var instPico:FlxSound;
 
 	public static var shaggyVoice:Bool = false;
 	var isShaggy:Bool = false;
@@ -1122,7 +1123,7 @@ class PlayState extends MusicBeatState
 		}
 		bfGroup.add(boyfriend);
 		isShaggy = boyfriend.curCharacter == 'shaggy' || boyfriend.curCharacter == 'supershaggy' || boyfriend.curCharacter == 'godshaggy' || boyfriend.curCharacter == 'redshaggy';
-                isPico = boyfriend.curCharacter == 'pico';
+                                isPico = boyfriend.curCharacter == 'pico';
 				
 		switch (stageCheck)
 		{
@@ -3304,9 +3305,10 @@ class PlayState extends MusicBeatState
 		}
 		if (!paused && isPico)
 		{
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoInst ? "Pico" : ""));
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoVoice ? "Pico" : "");
 			vocals.play();
 		}
+
 		for (tween in tweenList)
 		{
 			tween.active = true;
@@ -12763,5 +12765,5 @@ enum ExploitationModchartType
 
 enum CharacterFunnyEffect
 {
-	None; Dave; Bambi; Tristan; Exbungo; Recurser; Shaggy;
+	None; Dave; Bambi; Tristan; Exbungo; Recurser; Shaggy; Pico;
 }
