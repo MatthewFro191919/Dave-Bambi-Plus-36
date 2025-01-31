@@ -483,6 +483,11 @@ class PlayState extends MusicBeatState
 
 	var noteWidth:Float = 0;
 
+	//pico mix shit
+	public static var picoInst:Bool = false;
+	public static var picoVoice:Bool = false;
+	var isPico:Bool = false;
+
 	public static var shaggyVoice:Bool = false;
 	var isShaggy:Bool = false;
 	var legs:FlxSprite;
@@ -1264,6 +1269,9 @@ class PlayState extends MusicBeatState
 			'bonus-song', 'bonus-song-2.5', 'bot-trot', 'escape-from-california', 'adventure', 'mealie', 'indignancy', 'memory',
 			'roofs', 'supernovae', 'glitch', 'master', 'cheating', 'unfairness', 'kabunga', 'recursed', 'exploitation'
 		].contains(SONG.song.toLowerCase());
+
+		picoInst = isPico && ['house', 'blocked'].contains(SONG.song.toLowerCase());
+		picoVoice = isPico && ['house', 'blocked'].contains(SONG.song.toLowerCase());
 
 		generateSong(SONG.song);
 
@@ -3290,6 +3298,10 @@ class PlayState extends MusicBeatState
 
 		if (!paused)
 		{
+		if (isPico)
+			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song, picoInst ? "Pico" : ""));
+			vocals.play();
+		else
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 			vocals.play();
 		}
@@ -3392,8 +3404,10 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		if (SONG.needsVoices)
+		if (SONG.needsVoices && isShaggy)
 			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : shaggyVoice ? "Shaggy" : ""));
+		if (SONG.needsVoices && isPico)
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoVoice ? "Pico" : ""));
 		else
 			vocals = new FlxSound();
 
