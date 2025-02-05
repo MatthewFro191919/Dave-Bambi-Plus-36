@@ -35,6 +35,7 @@ class Character extends FlxSprite
 	public var barColor:FlxColor;
 	
 	public var canSing:Bool = true;
+
 	public var skins:Map<String, String> = new Map<String, String>();
 
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
