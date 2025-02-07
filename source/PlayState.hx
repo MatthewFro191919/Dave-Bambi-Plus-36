@@ -483,12 +483,6 @@ class PlayState extends MusicBeatState
 
 	var noteWidth:Float = 0;
 
-	//pico mix shit
-	public static var picoInst:Bool = false;
-	public static var picoVoice:Bool = false;
- 	var isPico:Bool = false;
-                var instPico:FlxSound;
-
 	public static var shaggyVoice:Bool = false;
 	var isShaggy:Bool = false;
 	var legs:FlxSprite;
@@ -1123,8 +1117,7 @@ class PlayState extends MusicBeatState
 		}
 		bfGroup.add(boyfriend);
 		isShaggy = boyfriend.curCharacter == 'shaggy' || boyfriend.curCharacter == 'supershaggy' || boyfriend.curCharacter == 'godshaggy' || boyfriend.curCharacter == 'redshaggy';
-                                isPico = boyfriend.curCharacter == 'pico';
-				
+
 		switch (stageCheck)
 		{
 			case 'desktop':
@@ -1271,9 +1264,6 @@ class PlayState extends MusicBeatState
 			'bonus-song', 'bonus-song-2.5', 'bot-trot', 'escape-from-california', 'adventure', 'mealie', 'indignancy', 'memory',
 			'roofs', 'supernovae', 'glitch', 'master', 'cheating', 'unfairness', 'kabunga', 'recursed', 'exploitation'
 		].contains(SONG.song.toLowerCase());
-
-		picoInst = isPico && ['house', 'blocked'].contains(SONG.song.toLowerCase());
-		picoVoice = isPico && ['house', 'blocked'].contains(SONG.song.toLowerCase());
 
 		generateSong(SONG.song);
 
@@ -3303,12 +3293,6 @@ class PlayState extends MusicBeatState
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 			vocals.play();
 		}
-		if (!paused && isPico)
-		{
-			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoVoice ? "Pico" : "");
-			vocals.play();
-		}
-
 		for (tween in tweenList)
 		{
 			tween.active = true;
@@ -3408,10 +3392,8 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		if (SONG.needsVoices && isShaggy)
+		if (SONG.needsVoices)
 			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : shaggyVoice ? "Shaggy" : ""));
-		if (SONG.needsVoices && isPico)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : picoVoice ? "Pico" : ""));
 		else
 			vocals = new FlxSound();
 
@@ -12765,5 +12747,5 @@ enum ExploitationModchartType
 
 enum CharacterFunnyEffect
 {
-	None; Dave; Bambi; Tristan; Exbungo; Recurser; Shaggy; Pico;
+	None; Dave; Bambi; Tristan; Exbungo; Recurser; Shaggy;
 }
