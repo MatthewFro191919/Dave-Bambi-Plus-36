@@ -2511,7 +2511,7 @@ class Character extends FlxSprite
 				nativelyPlayable = true;
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('DADDY_DEAREST', 'shared', true);
+				frames = Paths.getSparrowAtlas('DADDY_DEAREST', 'shared', true);
 				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
 				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24, false);
 				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24, false);
