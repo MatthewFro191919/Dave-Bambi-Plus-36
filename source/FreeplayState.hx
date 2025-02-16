@@ -80,6 +80,7 @@ class FreeplayState extends MusicBeatState
 		0xFFFFFFFF,    // cuzsiee
 		0xFF000000,    // dan
 		FlxColor.fromRGB(216, 176, 87), // Doge
+		0xFFaf66ce,    // daddy dearest
     ];
 	public static var skipSelect:Array<String> = 
 	[
@@ -380,6 +381,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['Memory'], 1, ['dave']);
 				addWeek(['Bonkers'], 19, ['longnosejohn']);
 				addWeek(['Splitathon-2'], 3, ['the-duo']);
+				addWeek(['false-paradise'], 23, ['dad']);
 			case 'dave2.5':
 				addWeek(['House-2.5', 'Insanity-2.5', 'Polygonized-2.5'], 1, ['dave-2.5', 'dave-annoyed-2.5', 'dave-angey-old']);
 				addWeek(['Bonus-Song-2.5'], 1, ['dave-2.5']);
