@@ -3057,7 +3057,6 @@ class Stage extends DisplayObjectContainer #if lime implements IModule #end
 	@:noCompletion private function __registerLimeModule(application:Application):Void
 	{
 		application.onCreateWindow.add(__onLimeCreateWindow);
-		application.onUpdate.add(__onLimeUpdate);
 		application.onExit.add(__onLimeModuleExit, false, 0);
 
 		for (gamepad in Gamepad.devices)
@@ -3277,7 +3276,6 @@ class Stage extends DisplayObjectContainer #if lime implements IModule #end
 	{
 		#if lime
 		application.onCreateWindow.remove(__onLimeCreateWindow);
-		application.onUpdate.remove(__onLimeUpdate);
 		application.onExit.remove(__onLimeModuleExit);
 
 		Gamepad.onConnect.remove(__onLimeGamepadConnect);
