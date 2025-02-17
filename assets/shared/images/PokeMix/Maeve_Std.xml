@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Maeve_Std.png"><SubTexture name="Maeve_IDLE0000" x="1739" y="0" width="609" height="801" frameX="-190" frameY="-113" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_IDLE0001" x="2348" y="801" width="610" height="785" frameX="-190" frameY="-129" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_IDLE0002" x="1897" y="1689" width="625" height="784" frameX="-207" frameY="-130" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_IDLE0003" x="1268" y="1689" width="629" height="789" frameX="-221" frameY="-125" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_IDLE0004" x="2348" y="0" width="620" height="801" frameX="-223" frameY="-113" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_IDLE0005" x="634" y="883" width="613" height="804" frameX="-203" frameY="-110" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Left0000" x="634" y="1689" width="634" height="793" frameX="-126" frameY="-121" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Left0001" x="0" y="1689" width="634" height="800" frameX="-128" frameY="-114" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Left0002" x="0" y="883" width="634" height="806" frameX="-144" frameY="-108" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Right0000" x="2968" y="0" width="595" height="777" frameX="-287" frameY="-137" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Right0001" x="1739" y="801" width="595" height="783" frameX="-292" frameY="-131" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Right0002" x="0" y="2489" width="601" height="767" frameX="-244" frameY="-147" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Up0000" x="0" y="0" width="580" height="883" frameX="-234" frameY="-30" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Up0001" x="580" y="0" width="580" height="881" frameX="-234" frameY="-32" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Up0002" x="1160" y="0" width="579" height="865" frameX="-234" frameY="-48" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Down0000" x="1809" y="2489" width="603" height="707" frameX="-262" frameY="-207" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Down0001" x="1209" y="2489" width="600" height="730" frameX="-273" frameY="-184" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="Maeve_Down0002" x="601" y="2489" width="608" height="751" frameX="-274" frameY="-163" frameWidth="1000" frameHeight="1000" />
+</TextureAtlas>
