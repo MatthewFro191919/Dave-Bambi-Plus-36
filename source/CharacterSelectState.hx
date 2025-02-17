@@ -222,6 +222,12 @@ class CharacterSelectState extends MusicBeatState
 		new CharacterInSelect('eevee', [1, 1, 1, 1], [
 			new CharacterForm('eevee', 'Eevee', [1,1,1,1])
 		]),
+		new CharacterInSelect('maeve', [0, 0, 3, 0], [
+			new CharacterForm('maeve', 'Maeve', [0, 0, 3, 0]),
+		]),
+		new CharacterInSelect('agent', [0, 0, 3, 0], [
+			new CharacterForm('agent', 'Agentsecret24', [0, 0, 3, 0]),
+		]),
 	];
 	#if SHADERS_ENABLED
 	var bgShader:Shaders.GlitchEffect;
