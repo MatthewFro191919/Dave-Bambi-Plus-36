@@ -485,6 +485,13 @@ class PlayState extends MusicBeatState
 
 	public static var shaggyVoice:Bool = false;
 	var isShaggy:Bool = false;
+
+	public static var maeveVoice:Bool = false;
+	var isMaeve:Bool = false;
+
+	public static var agentVoice:Bool = false;
+	var isAgent:Bool = false;
+
 	var legs:FlxSprite;
 	var shaggyT:FlxTrail;
 	var legT:FlxTrail;
@@ -1117,6 +1124,8 @@ class PlayState extends MusicBeatState
 		}
 		bfGroup.add(boyfriend);
 		isShaggy = boyfriend.curCharacter == 'shaggy' || boyfriend.curCharacter == 'supershaggy' || boyfriend.curCharacter == 'godshaggy' || boyfriend.curCharacter == 'redshaggy';
+		isMaeve = boyfriend.curCharacter == 'maeve';
+		isAgent = boyfriend.curCharacter == 'agent';
 
 		switch (stageCheck)
 		{
@@ -1264,6 +1273,10 @@ class PlayState extends MusicBeatState
 			'bonus-song', 'bonus-song-2.5', 'bot-trot', 'escape-from-california', 'adventure', 'mealie', 'indignancy', 'memory',
 			'roofs', 'supernovae', 'glitch', 'master', 'cheating', 'unfairness', 'kabunga', 'recursed', 'exploitation'
 		].contains(SONG.song.toLowerCase());
+                
+                agentVoice = isAgent && ['interdimensional'].contains(SONG.song.toLowerCase());
+                
+                maeveVoice = isMaeve && ['interdimensional'].contains(SONG.song.toLowerCase());
 
 		generateSong(SONG.song);
 
@@ -3394,6 +3407,8 @@ class PlayState extends MusicBeatState
 
 		if (SONG.needsVoices)
 			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : shaggyVoice ? "Shaggy" : ""));
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : agentVoice ? "Agent" : ""));
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : maeveVoice ? "Maeve" : ""));
 		else
 			vocals = new FlxSound();
 
