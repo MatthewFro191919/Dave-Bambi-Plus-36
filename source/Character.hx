@@ -2523,6 +2523,34 @@ class Character extends FlxSprite
 				barColor = 0xFFaf66ce;
 
 				playAnim('idle');
+			case 'maeve':
+				frames = Paths.getSparrowAtlas('PokeMix/Maeve_Std', 'shared');
+				animation.addByPrefix('idle', 'Maeve_IDLE', 24, false);
+				animation.addByPrefix('singUP', 'Maeve_Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Maeve_Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Maeve_Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Maeve_Left', 24, false);
+
+				loadOffsetFile(curCharacter);
+				barColor = FlxColor.fromRGB(255, 238, 163);
+
+				playAnim('idle');
+			case 'tristan-pokemix':
+				frames = Paths.getSparrowAtlas('PokeMix/Tristan', 'shared');
+				animation.addByPrefix('idle', 'Tristan Idle', 24, false);
+				animation.addByPrefix('singUP', 'Tristan SingUp', 24, false);
+				animation.addByPrefix('singRIGHT', 'Tristan SingRight', 24, false);
+				animation.addByPrefix('singDOWN', 'Tristan SingDown', 24, false);
+				animation.addByPrefix('singLEFT', 'Tristan SingLeft', 24, false);
+				animation.addByPrefix('singUPmiss', 'Tristan MissUp', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'Tristan MissRight', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'Tristan MissDown', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'Tristan MissLeft', 24, false);
+
+				loadOffsetFile(curCharacter);
+				barColor = FlxColor.fromRGB(149, 113, 208);
+
+				playAnim('idle');
 
 		}
 		dance();
