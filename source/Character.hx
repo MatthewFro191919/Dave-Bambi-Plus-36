@@ -2535,7 +2535,7 @@ class Character extends FlxSprite
 				barColor = FlxColor.fromRGB(255, 238, 163);
 
 				playAnim('idle');
-			case 'tristan-pokemix':
+			case 'agent':
 				frames = Paths.getSparrowAtlas('PokeMix/Tristan', 'shared');
 				animation.addByPrefix('idle', 'Tristan Idle', 24, false);
 				animation.addByPrefix('singUP', 'Tristan SingUp', 24, false);
