@@ -243,6 +243,7 @@ class CharacterSelectState extends MusicBeatState
 	override public function create():Void 
 	{
 		unlockCharacter('shaggy');
+		unlockCharacter('eevee');
 		unlockCharacter('maeve');
 		unlockCharacter('agent');
 		if (PlayState.SONG.song.toLowerCase() == 'exploitation' && !FlxG.save.data.modchart)
