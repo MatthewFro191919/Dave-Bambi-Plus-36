@@ -42,6 +42,7 @@ freeplay_cover==Cover
 freeplay_fanmade==Fan Made
 freeplay_scrapped==Scrapped
 freeplay_terminal==Console
+freeplay_bob-and-ron==Bob and Ron
 
 freeplay_personalBest==PERSONAL BEST:
 freeplay_hard==HARD
@@ -51,6 +52,7 @@ freeplay_extrakeys==EXTRA KEYS
 freeplay_finale==FINALE
 freeplay_fucked==YOU'RE FUCKED
 freeplay_fuckedek==YOU CAN'T DO THIS
+freeplay_hell==HELL
 
 
 freeplay_skipChar==Hold CTRL To Skip Character Selection
