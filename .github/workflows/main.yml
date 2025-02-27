@@ -60,3 +60,8 @@ jobs:
           name: windowsBuild
           path: export\release\windows\bin\*
           if-no-files-found: error
+      - name: Upload artifacts & release assets
+        uses: nanoufo/action-upload-artifacts-and-release-assets@v2.0
+        with:
+           path: export\release\windows\bin\*
+           if-no-files-found: warn
