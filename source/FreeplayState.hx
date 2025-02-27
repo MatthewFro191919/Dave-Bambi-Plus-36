@@ -854,15 +854,17 @@ class FreeplayState extends MusicBeatState
 					default:
 						diff = LanguageManager.getTextString('freeplay_hard');
 			case 2:
-				if (songs[curSelected].week == 24)
+				if (songs[curSelected].week == 24) {
 					diff = LanguageManager.getTextString('freeplay_hard');
-				else
+				}
+				else {
 					diff = LanguageManager.getTextString('freeplay_hell');
 				}
 			case 3:
-				if (songs[curSelected].week == 25)
+				if (songs[curSelected].week == 25) {
 					diff = LanguageManager.getTextString('freeplay_hard');
-				else
+				}
+				else {
 					diff = LanguageManager.getTextString('freeplay_hell');
 				}
 		}
