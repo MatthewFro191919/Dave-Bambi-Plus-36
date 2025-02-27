@@ -2534,23 +2534,23 @@ class PlayState extends MusicBeatState
 						bgZoom = 0.8;
 						bg.loadGraphic(Paths.image('bob/cheater', 'shared'));
 						stageName = 'daveEvilHouse';
-                    }
+                                        }
 					if (dad.curCharacter == 'bob-3d-hell') {
 						bgZoom = 0.8;
 						bg.loadGraphic(Paths.image('bob/hell/cheater', 'shared'));
 						stageName = 'daveEvilHouse';
-                    }
-                    case 'ron-void':
+					}
+					case 'ron-void':
 					if (dad.curCharacter == 'ron-3d') {
 						bgZoom = 0.8;
 						bg.loadGraphic(Paths.image('ron/cheater', 'shared'));
 						stageName = 'daveEvilHouse';
-                    }
+					}
 					if (dad.curCharacter == 'ron-3d-hell') {
 						bgZoom = 0.8;
 						bg.loadGraphic(Paths.image('ron/hell/cheater', 'shared'));
 						stageName = 'daveEvilHouse';
-                    }
+					}
 	 			}
 				sprites.add(bg);
 				add(bg);
