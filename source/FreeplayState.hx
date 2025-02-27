@@ -423,15 +423,13 @@ class FreeplayState extends MusicBeatState
 
 				addWeek(['Enter Terminal'], 17, ['terminal']);
 			case 'bob-and-ron':
-				if (FlxG.save.data.cheatingFound) {
-				        if (diff == 'freeplay_hard') {
+				if (FlxG.save.data.cheatingFound)
+				   if (diff == 'freeplay_hard')
 					addWeek(['Cheating-Bob'], 24, ['bob-3d']);
 					addWeek(['Cheating-Ron'], 25, ['ron-3d']);
-	                          	}
-				        if (diff == 'freeplay_hell') {
+				   if (diff == 'freeplay_hell')
 					addWeek(['Cheating-Bob-Hell'], 26, ['bob-3d-hell']);
 					addWeek(['Cheating-Ron-Hell'], 27, ['ron-3d-hell']);
-	                          	}
 				}
 		}
 	}
