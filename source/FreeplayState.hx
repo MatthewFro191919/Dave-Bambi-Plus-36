@@ -214,7 +214,7 @@ class FreeplayState extends MusicBeatState
 		}
 		if (FlxG.save.data.terminalFound && !awaitingExploitation)
 		{
-			Catagories = ['dave', 'joke', 'extras', 'dave2.5', 'classic', 'cover', 'fanmade', 'terminal'];
+			Catagories = ['dave', 'joke', 'extras', 'dave2.5', 'classic', 'cover', 'fanmade', 'terminal', 'bob-and-ron'];
 			translatedCatagory = [
 				LanguageManager.getTextString('freeplay_dave'),
 				LanguageManager.getTextString('freeplay_joke'),
@@ -223,7 +223,8 @@ class FreeplayState extends MusicBeatState
 				LanguageManager.getTextString('freeplay_classic'),
 				LanguageManager.getTextString('freeplay_cover'),
 				LanguageManager.getTextString('freeplay_fanmade'),
-				LanguageManager.getTextString('freeplay_terminal')];
+				LanguageManager.getTextString('freeplay_terminal'),
+				LanguageManager.getTextString('freeplay_bob-and-ron')];
 		}
 
 		for (i in 0...Catagories.length)
