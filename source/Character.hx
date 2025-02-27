@@ -2398,11 +2398,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
 				animation.addByPrefix('cheer', 'Ugh', 24, false);
 				addOffset('idle');
-				addOffset("singUP", 42, 38);
-				addOffset("singLEFT", 98, -27);
-				addOffset("singRIGHT", -89, -51);
-				addOffset("singDOWN", 40, -120);
-				addOffset("cheer", 71, -40);
+
+				loadOffsetFile(curCharacter);
 
 				barColor = 0xFFffd800;
 				
@@ -2413,6 +2410,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'down', 24, false);
                                 animation.addByPrefix('singLEFT', 'left', 24, false);
 				animation.addByPrefix('singRIGHT', 'right', 24, false);
+
+				loadOffsetFile(curCharacter);
 
 				barColor = 0xFFFFFFF;
 				globalOffset = [0, 120];
@@ -2475,7 +2474,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Fish Down Note', 24, false);
                                 animation.addByPrefix('singLEFT', 'Fish Left Note', 24, false);
 				animation.addByPrefix('singRIGHT', 'Fish Right Note', 24, false);
-
+				loadOffsetFile(curCharacter);
 				barColor = FlxColor.fromRGB(235, 135, 0);
 
 				globalOffset = [0, 390];
