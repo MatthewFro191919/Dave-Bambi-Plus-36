@@ -53,7 +53,7 @@ jobs:
         if: startsWith(matrix.os, 'windows')
         run: haxelib run lime build windows -D officialBuild
       - name: Upload artifacts & release assets
-        uses: nanoufo/action-upload-artifacts-and-release-assets@main
+        uses: actions/action-upload-artifacts-and-release-assets@main
         with:
            path: export\release\windows\bin\*
            if-no-files-found: warn
