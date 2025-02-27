@@ -26,6 +26,8 @@ using StringTools;
 
 class FreeplayState extends MusicBeatState
 {
+	var diff:String = 'HARD';
+
 	var songs:Array<SongMetadata> = [];
 
 	var selector:FlxText;
@@ -816,7 +818,6 @@ class FreeplayState extends MusicBeatState
 
 	function updateDifficultyText()
 	{
-		var diff:String = 'HARD';
 		switch (curDifficulty)
 		{
 			case 0:
