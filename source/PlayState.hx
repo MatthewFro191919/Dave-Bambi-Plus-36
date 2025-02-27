@@ -814,6 +814,10 @@ class PlayState extends MusicBeatState
 					stageCheck = 'fuckyouZardyTime';
 				case 'omission':
 					stageCheck = 'omission';
+				case 'cheating-bob':
+					stageCheck = 'bob-void';
+				case 'cheating-ron':
+					stageCheck = 'bob-void';
 			}
 		}
 		else
@@ -2494,7 +2498,7 @@ class PlayState extends MusicBeatState
 				sprites.add(expungedBG);
 				add(expungedBG);
 				voidShader(expungedBG);
-			case 'red-void' | 'green-void' | 'glitchy-void' | 'omission' | "banana-hell":
+			case 'red-void' | 'green-void' | 'glitchy-void' | 'omission' | "banana-hell" | 'bob-void'| 'ron-void':
 				bgZoom = 0.7;
 
 				var bg:BGSprite = new BGSprite('void', -600, -200, '', null, 1, 1, false, true);
@@ -2525,7 +2529,29 @@ class PlayState extends MusicBeatState
 						bg.setGraphicSize(Std.int(bg.width * 2.55), Std.int(bg.height * 2));
 					        weirdBG = bg;
 					        stageName = 'banana-land';
-				}
+					case 'bob-void':
+					if (dad.curCharacter == 'bob-3d') {
+						bgZoom = 0.8;
+						bg.loadGraphic(Paths.image('bob/cheater', 'shared'));
+						stageName = 'daveEvilHouse';
+                    }
+					if (dad.curCharacter == 'bob-3d-hell') {
+						bgZoom = 0.8;
+						bg.loadGraphic(Paths.image('bob/hell/cheater', 'shared'));
+						stageName = 'daveEvilHouse';
+                    }
+                    case 'ron-void':
+					if (dad.curCharacter == 'ron-3d') {
+						bgZoom = 0.8;
+						bg.loadGraphic(Paths.image('ron/cheater', 'shared'));
+						stageName = 'daveEvilHouse';
+                    }
+					if (dad.curCharacter == 'ron-3d-hell') {
+						bgZoom = 0.8;
+						bg.loadGraphic(Paths.image('ron/hell/cheater', 'shared'));
+						stageName = 'daveEvilHouse';
+                    }
+	 			}
 				sprites.add(bg);
 				add(bg);
 				voidShader(bg);
