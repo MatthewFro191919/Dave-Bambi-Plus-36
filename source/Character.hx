@@ -2568,8 +2568,8 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 80, -20);
 				addOffset("singLEFT", 0, -10);
 				addOffset("singDOWN", 0, 10);
-				globaloffset[0] = 150;
-				globaloffset[1] = 450; //this is the y
+				globalOffset[0] = 150;
+				globalOffset[1] = 450; //this is the y
 				setGraphicSize(Std.int(width / furiosityScale));
 				updateHitbox();
 				antialiasing = false;
@@ -2586,8 +2586,8 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 
-				globaloffset[0] = 150;
-				globaloffset[1] = 450; //this is the y
+				globalOffset[0] = 150;
+				globalOffset[1] = 450; //this is the y
 				setGraphicSize(Std.int(width / furiosityScale));
 				updateHitbox();
 				antialiasing = false;
@@ -2604,8 +2604,8 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 
-				globaloffset[0] = 150;
-				globaloffset[1] = 450; //this is the y
+				globalOffset[0] = 150;
+				globalOffset[1] = 450; //this is the y
 				setGraphicSize(Std.int(width / furiosityScale));
 				updateHitbox();
 				antialiasing = false;
@@ -2622,8 +2622,8 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 
-				globaloffset[0] = 150;
-				globaloffset[1] = 450; //this is the y
+				globalOffset[0] = 150;
+				globalOffset[1] = 450; //this is the y
 				setGraphicSize(Std.int(width / furiosityScale));
 				updateHitbox();
 				antialiasing = false;
