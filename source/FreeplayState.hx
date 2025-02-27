@@ -139,7 +139,7 @@ class FreeplayState extends MusicBeatState
 		'vs-dave-thanksgiving',
 		'bonkers',
 		'duper',
-                'omission',
+        'omission',
 		'doge-vs-bambi'
 	];
 
@@ -174,11 +174,6 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
-		#if not web
-		Paths.clearUnusedMemory();
-        Paths.clearStoredMemory();
-		#end
-
 		#if desktop DiscordClient.changePresence("In the Freeplay Menu", null); #end
 		
 		awaitingExploitation = (FlxG.save.data.exploitationState == 'awaiting');
@@ -192,16 +187,14 @@ class FreeplayState extends MusicBeatState
 			bg.color = FlxColor.multiply(bg.color, FlxColor.fromRGB(50, 50, 50));
 			add(bg);
 			
-			if(FlxG.save.data.waving){
-				#if SHADERS_ENABLED
-				bgShader = new Shaders.GlitchEffect();
-				bgShader.waveAmplitude = 0.1;
-				bgShader.waveFrequency = 5;
-				bgShader.waveSpeed = 2;
-				
-				bg.shader = bgShader.shader;
-				#end
-			}
+			#if SHADERS_ENABLED
+			bgShader = new Shaders.GlitchEffect();
+			bgShader.waveAmplitude = 0.1;
+			bgShader.waveFrequency = 5;
+			bgShader.waveSpeed = 2;
+			
+			bg.shader = bgShader.shader;
+			#end
 			defColor = bg.color;
 		}
 		else
@@ -214,17 +207,12 @@ class FreeplayState extends MusicBeatState
 		}
 		if (FlxG.save.data.terminalFound && !awaitingExploitation)
 		{
-			Catagories = ['dave', 'joke', 'extras', 'dave2.5', 'classic', 'cover', 'fanmade', 'terminal', 'bob-and-ron'];
+			Catagories = ['dave', 'joke', 'extras', 'terminal'];
 			translatedCatagory = [
-				LanguageManager.getTextString('freeplay_dave'),
-				LanguageManager.getTextString('freeplay_joke'),
-				LanguageManager.getTextString('freeplay_extra'),
-				LanguageManager.getTextString('freeplay_dave2.5'),
-				LanguageManager.getTextString('freeplay_classic'),
-				LanguageManager.getTextString('freeplay_cover'),
-				LanguageManager.getTextString('freeplay_fanmade'),
-				LanguageManager.getTextString('freeplay_terminal'),
-				LanguageManager.getTextString('freeplay_bob-and-ron')];
+			LanguageManager.getTextString('freeplay_dave'),
+			LanguageManager.getTextString('freeplay_joke'),
+			LanguageManager.getTextString('freeplay_extra'),
+			LanguageManager.getTextString('freeplay_terminal')];
 		}
 
 		for (i in 0...Catagories.length)
@@ -235,7 +223,7 @@ class FreeplayState extends MusicBeatState
 			CurrentSongIcon.centerOffsets(false);
 			CurrentSongIcon.x = (1000 * i + 1) + (512 - CurrentSongIcon.width);
 			CurrentSongIcon.y = (FlxG.height / 2) - 256;
-			CurrentSongIcon.antialiasing = FlxG.save.data.globalAntialiasing;
+			CurrentSongIcon.antialiasing = true;
 
 			var NameAlpha:Alphabet = new Alphabet(40, (FlxG.height / 2) - 282, translatedCatagory[i], true, false);
 			NameAlpha.x = CurrentSongIcon.x;
@@ -430,13 +418,12 @@ class FreeplayState extends MusicBeatState
 				   if (diff == 'freeplay_hell')
 					addWeek(['Cheating-Bob-Hell'], 26, ['bob-3d-hell']);
 					addWeek(['Cheating-Ron-Hell'], 27, ['ron-3d-hell']);
-				}
 		}
 	}
 
 	var scoreBG:FlxSprite;
 
-	function GoToActualFreeplay()
+	public function GoToActualFreeplay()
 	{
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -462,7 +449,7 @@ class FreeplayState extends MusicBeatState
 
 		scoreText = new FlxText(FlxG.width * 0.7, 0, 0, "", 32);
 		scoreText.setFormat(Paths.font("comic.ttf"), 32, FlxColor.WHITE, LEFT);
-		scoreText.antialiasing = FlxG.save.data.globalAntialiasing;
+		scoreText.antialiasing = true;
 		scoreText.y = -225;
 		scoreText.scrollFactor.set();
 
@@ -473,7 +460,7 @@ class FreeplayState extends MusicBeatState
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 15, 0, "", 24);
 		diffText.setFormat(Paths.font("comic.ttf"), 24, FlxColor.WHITE, LEFT);
-		diffText.antialiasing = FlxG.save.data.globalAntialiasing;
+		diffText.antialiasing = true;
 		diffText.scrollFactor.set();
 
 		if (showCharText)
@@ -481,7 +468,7 @@ class FreeplayState extends MusicBeatState
 			characterSelectText = new FlxText(FlxG.width, FlxG.height, 0, LanguageManager.getTextString("freeplay_skipChar"), 18);
 			characterSelectText.setFormat("Comic Sans MS Bold", 18, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			characterSelectText.borderSize = 1.5;
-			characterSelectText.antialiasing = FlxG.save.data.globalAntialiasing;
+			characterSelectText.antialiasing = true;
 			characterSelectText.scrollFactor.set();
 			characterSelectText.alpha = 0;
 			characterSelectText.x -= characterSelectText.textField.textWidth;
@@ -557,14 +544,12 @@ class FreeplayState extends MusicBeatState
 	{
 		super.update(elapsed);
 
-		if(FlxG.save.data.waving){
-			#if SHADERS_ENABLED
-			if (bgShader != null)
-			{
-				bgShader.shader.uTime.value[0] += elapsed;
-			}
-			#end
+		#if SHADERS_ENABLED
+		if (bgShader != null)
+		{
+			bgShader.shader.uTime.value[0] += elapsed;
 		}
+		#end
 
 		if (InMainFreeplayState)
 		{
@@ -644,8 +629,7 @@ class FreeplayState extends MusicBeatState
 			}
 			if (controls.BACK && canInteract && !awaitingExploitation)
 			{
-				FlxG.sound.play(Paths.sound('cancelMenu'));
-				FlxG.switchState(new PlaySelectionState());
+				FlxG.switchState(new MainMenuState());
 			}
 
 			return;
@@ -851,6 +835,7 @@ class FreeplayState extends MusicBeatState
 						diff = LanguageManager.getTextString('freeplay_fucked');
 					default:
 						diff = LanguageManager.getTextString('freeplay_hard');
+				}
 			case 2:
 				if (songs[curSelected].week == 24) {
 					diff = LanguageManager.getTextString('freeplay_hard');
@@ -1039,7 +1024,7 @@ class FreeplayState extends MusicBeatState
 			});
 		});
 	}
-	function getSongWeek(song:String)
+	static function getSongWeek(song:String)
 	{
 		
 	}
