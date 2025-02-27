@@ -1039,7 +1039,7 @@ class FreeplayState extends MusicBeatState
 			});
 		});
 	}
-	static function getSongWeek(song:String)
+	final function getSongWeek(song:String)
 	{
 		
 	}
