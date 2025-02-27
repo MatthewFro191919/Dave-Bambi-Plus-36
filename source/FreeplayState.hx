@@ -436,7 +436,7 @@ class FreeplayState extends MusicBeatState
 
 	var scoreBG:FlxSprite;
 
-	final function GoToActualFreeplay()
+	function GoToActualFreeplay()
 	{
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -1039,7 +1039,7 @@ class FreeplayState extends MusicBeatState
 			});
 		});
 	}
-	final function getSongWeek(song:String)
+	function getSongWeek(song:String)
 	{
 		
 	}
