@@ -33,7 +33,7 @@ jobs:
       - name: Install Libraries
         run: |
           haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp.git
-          haxelib git lime https://github.com/MobilePorting/lime
+          haxelib git lime https://github.com/mcagabe19-stuff/lime
           haxelib install openfl 9.2.2
           haxelib install flixel 5.2.2
           haxelib install flixel-tools 1.5.1
@@ -48,12 +48,15 @@ jobs:
           haxelib install actuate
           haxelib install hxCodec 2.5.1
           haxelib install hscript
-          haxelib git lime https://github.com/MobilePorting/lime
+          haxelib git lime https://github.com/mcagabe19-stuff/lime
       - name: Compile (Windows)
         if: startsWith(matrix.os, 'windows')
         run: haxelib run lime build windows -D officialBuild
-      - name: Upload artifacts & release assets
-        uses: actions/action-upload-artifacts-and-release-assets@main
+
+      - name: Upload Artifact (Windows)
+        if: startsWith(matrix.os, 'windows')
+        uses: actions/upload-artifact@main
         with:
-           path: export\release\windows\bin\*
-           if-no-files-found: warn
+          name: windowsBuild
+          path: export\release\windows\bin\*
+          if-no-files-found: error
