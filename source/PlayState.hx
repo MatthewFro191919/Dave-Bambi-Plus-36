@@ -3433,12 +3433,13 @@ class PlayState extends MusicBeatState
 
 		if (SONG.needsVoices)
 			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : shaggyVoice ? "Shaggy" : ""));
-		if (isAgent)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : agentVoice ? "Agent" : ""));
-		if (isMaeve)
-			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : maeveVoice ? "Maeve" : ""));
 		else
 			vocals = new FlxSound();
+		if (isAgent && SONG.needsVoices)
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : agentVoice ? "Agent" : ""));
+		if (isMaeve && SONG.needsVoices)
+			vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song, localFunny == CharacterFunnyEffect.Tristan ? "-Tristan" : maeveVoice ? "Maeve" : ""));
+
 
 		FlxG.sound.list.add(vocals);
 
