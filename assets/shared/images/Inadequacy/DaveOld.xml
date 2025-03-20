@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="DaveOld.png">
+<SubTexture name="Idle0000" x="830" y="935" width="287" height="420" frameX="-73" frameY="-184" frameWidth="416" frameHeight="615" />
+<SubTexture name="Idle0001" x="275" y="935" width="272" height="435" frameX="-73" frameY="-169" frameWidth="416" frameHeight="615" />
+<SubTexture name="Idle0002" x="1366" y="0" width="260" height="445" frameX="-73" frameY="-159" frameWidth="416" frameHeight="615" />
+<SubTexture name="Idle0003" x="0" y="482" width="256" height="453" frameX="-73" frameY="-151" frameWidth="416" frameHeight="615" />
+<SubTexture name="Left0000" x="562" y="482" width="249" height="447" frameX="-69" frameY="-157" frameWidth="416" frameHeight="615" />
+<SubTexture name="Left0001" x="858" y="0" width="252" height="454" frameX="-77" frameY="-150" frameWidth="416" frameHeight="615" />
+<SubTexture name="Right0000" x="256" y="482" width="306" height="453" frameX="-29" frameY="-142" frameWidth="416" frameHeight="615" />
+<SubTexture name="Right0001" x="811" y="482" width="289" height="447" frameX="-59" frameY="-148" frameWidth="416" frameHeight="615" />
+<SubTexture name="Up0000" x="0" y="0" width="301" height="482" frameX="-62" frameY="-122" frameWidth="416" frameHeight="615" />
+<SubTexture name="Up0001" x="301" y="0" width="319" height="473" frameX="-53" frameY="-131" frameWidth="416" frameHeight="615" />
+<SubTexture name="Down0000" x="547" y="935" width="283" height="424" frameX="-68" frameY="-180" frameWidth="416" frameHeight="615" />
+<SubTexture name="Down0001" x="0" y="935" width="275" height="436" frameX="-73" frameY="-168" frameWidth="416" frameHeight="615" />
+<SubTexture name="Miss0000" x="620" y="0" width="238" height="456" frameX="-82" frameY="-148" frameWidth="416" frameHeight="615" />
+<SubTexture name="Miss0001" x="1110" y="0" width="256" height="446" frameX="-73" frameY="-158" frameWidth="416" frameHeight="615" />
+</TextureAtlas>

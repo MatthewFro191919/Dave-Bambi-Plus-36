@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="BambAethos.png">
+<SubTexture name="Idle0000" x="1293" y="1149" width="272" height="306" frameX="-219" frameY="-304" frameWidth="706" frameHeight="673" />
+<SubTexture name="Idle0001" x="1026" y="1149" width="267" height="312" frameX="-220" frameY="-297" frameWidth="706" frameHeight="673" />
+<SubTexture name="Idle0002" x="766" y="1149" width="260" height="322" frameX="-223" frameY="-286" frameWidth="706" frameHeight="673" />
+<SubTexture name="Idle0003" x="511" y="1149" width="255" height="326" frameX="-225" frameY="-279" frameWidth="706" frameHeight="673" />
+<SubTexture name="Idle0004" x="1093" y="0" width="246" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="Left0000" x="485" y="425" width="239" height="335" frameX="-167" frameY="-264" frameWidth="706" frameHeight="673" />
+<SubTexture name="Left0001" x="855" y="0" width="238" height="335" frameX="-182" frameY="-264" frameWidth="706" frameHeight="673" />
+<SubTexture name="Down0000" x="0" y="1477" width="255" height="239" frameX="-239" frameY="-362" frameWidth="706" frameHeight="673" />
+<SubTexture name="Down0001" x="1710" y="0" width="249" height="250" frameX="-231" frameY="-349" frameWidth="706" frameHeight="673" />
+<SubTexture name="Up0000" x="0" y="425" width="234" height="393" frameX="-229" frameY="-212" frameWidth="706" frameHeight="673" />
+<SubTexture name="Up0001" x="234" y="425" width="251" height="377" frameX="-227" frameY="-228" frameWidth="706" frameHeight="673" />
+<SubTexture name="Right0000" x="0" y="1149" width="259" height="328" frameX="-259" frameY="-266" frameWidth="706" frameHeight="673" />
+<SubTexture name="Right0001" x="259" y="1149" width="252" height="328" frameX="-257" frameY="-266" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0000" x="523" y="0" width="332" height="406" frameX="-144" frameY="-197" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0001" x="0" y="0" width="249" height="425" frameX="-227" frameY="-178" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0002" x="249" y="0" width="274" height="411" frameX="-230" frameY="-192" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0003" x="0" y="818" width="363" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0004" x="363" y="818" width="363" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0005" x="726" y="818" width="375" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0006" x="1339" y="0" width="371" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0007" x="1339" y="331" width="371" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+<SubTexture name="PhoneSmash0008" x="1339" y="662" width="369" height="331" frameX="-230" frameY="-272" frameWidth="706" frameHeight="673" />
+</TextureAtlas>
