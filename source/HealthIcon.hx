@@ -37,7 +37,43 @@ class HealthIcon extends FlxSprite
 				loadGraphic(Paths.image('ui/iconGrid/' + char, 'preload'), true, 150, 150);
 			else
 				loadGraphic(Paths.image('blank', 'shared'));
-	
+			if (char != "DaveOld")
+				loadGraphic(Paths.image('icons/OldDave', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "Dave3D")
+				loadGraphic(Paths.image('icons/3dDave', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "OldDave3D")
+				loadGraphic(Paths.image('icons/3DOldDave', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "DaveDead")
+				loadGraphic(Paths.image('icons/OldDave', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "BambiAethos")
+				loadGraphic(Paths.image('icons/3dDave', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "ExpungedAethos")
+				loadGraphic(Paths.image('icons/Expunged', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "OldExpunged")
+				loadGraphic(Paths.image('icons/Oldpunged', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "MarcelloBambi")
+				loadGraphic(Paths.image('icons/Marcello', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+			if (char != "OGDave")
+				loadGraphic(Paths.image('icons/DaveOG', 'preload'), true, 150, 150);
+			else
+				loadGraphic(Paths.image('blank', 'shared'));
+
 			if (char != "none")
 			{
 				antialiasing = !noAaChars.contains(char);
