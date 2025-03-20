@@ -2628,7 +2628,166 @@ class Character extends FlxSprite
 				updateHitbox();
 				antialiasing = false;
 		
+			case 'Dave3D':
+				// DAVE SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('dave/characters/Dave_3D', 'shared');
 
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+		
+				loadOffsetFile(curCharacter);
+				
+				globalOffset = [-140, -380];
+				
+				barColor = FlxColor.fromRGB(130, 47, 42);
+
+				nativelyPlayable = true;
+
+				setGraphicSize(Std.int((width * 0.8) / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+
+				skins.set('recursed', 'dave-3d-recursed');
+
+				playAnim('idle');
+
+			case 'ExpungedAethos':
+				// BAMBI SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('Inadequacy/Expunged', 'shared');
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+		
+				barColor = FlxColor.fromRGB(13, 151, 21);
+
+				loadOffsetFile(curCharacter + (isPlayer ? '-playable' : ''));
+
+				globalOffset = [0, -350];
+
+				setGraphicSize(Std.int((width * 1.5) / furiosityScale));
+
+				updateHitbox();
+				antialiasing = false;
+		
+				playAnim('idle');
+			case 'OldExpunged':
+				// BAMBI SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('Inadequacy/ExpungedOld', 'shared');
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+		
+				barColor = FlxColor.fromRGB(13, 151, 21);
+
+				loadOffsetFile(curCharacter + (isPlayer ? '-playable' : ''));
+
+				globalOffset = [-30, -350];
+
+				setGraphicSize(Std.int((width * 1.1) / furiosityScale));
+
+				updateHitbox();
+				antialiasing = false;
+		
+				playAnim('idle');
+			case 'OldDave3D':
+				// DAVE SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('Inadequacy/Old3DDave', 'shared');
+
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+		
+				loadOffsetFile(curCharacter);
+				
+				globalOffset = [-140, -380];
+				
+				barColor = FlxColor.fromRGB(130, 47, 42);
+
+				nativelyPlayable = true;
+
+				setGraphicSize(Std.int((width * 0.8) / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+
+				skins.set('recursed', 'dave-3d-recursed');
+
+				playAnim('idle');
+			case 'BambiAethos':
+				frames = Paths.getSparrowAtlas('Inadequacy/BambAethos', 'shared');
+
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				globalOffset = [70, 52];
+
+				barColor = FlxColor.fromRGB(12, 181, 0);
+				nativelyPlayable = true;
+				flipX = true;
+				playAnim('idle')
+			case 'OGDave':
+				// DAVE SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('Inadequacy/OGDave', 'shared');
+
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+
+				loadOffsetFile(curCharacter);
+				
+				globalOffset = [-140, -380];
+				
+				barColor = FlxColor.fromRGB(130, 47, 42);
+
+				nativelyPlayable = true;
+
+				setGraphicSize(Std.int((width * 0.8) / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+
+				skins.set('recursed', 'dave-3d-recursed');
+
+				playAnim('idle');
+			case 'MarcelloBambi':
+				// DAVE SHITE ANIMATION LOADING CODE
+				frames = Paths.getSparrowAtlas('Inadequacy/Marcello', 'shared');
+
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+
+				loadOffsetFile(curCharacter);
+				
+				globalOffset = [-140, -380];
+				
+				barColor = FlxColor.fromRGB(130, 47, 42);
+
+				nativelyPlayable = true;
+
+				setGraphicSize(Std.int((width * 0.8) / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+
+				skins.set('recursed', 'dave-3d-recursed');
+
+				playAnim('idle');
 		}
 		dance();
 
